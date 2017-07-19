@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.description  = <<-DESC
                    DESC
 
-  s.homepage     = "http://EXAMPLE/WxxKit"
+  s.homepage     = "https://github.com/wengxianxun/WxxKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -52,9 +52,9 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  s.author             = { "wengxx" => "wengxianxun@163.com" }
+  s.author             = { "wengxx" => "wengxianxun@hotmail.com" }
   # Or just: s.author    = "wengxx"
-  # s.authors            = { "wengxx" => "wengxianxun@163.com" }
+  # s.authors            = { "wengxx" => "wengxianxun@hotmail.com" }
   # s.social_media_url   = "http://twitter.com/wengxx"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
