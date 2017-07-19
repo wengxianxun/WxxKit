@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		90EFD7A31F1E09D90057ABAC /* WxxKitFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90EFD79A1F1E09D80057ABAC /* WxxKitFrameWork.framework */; };
+		90EFD7AA1F1E09D90057ABAC /* WxxKitFrameWorkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EFD7A91F1E09D90057ABAC /* WxxKitFrameWorkTests.m */; };
+		90EFD7AC1F1E09D90057ABAC /* WxxKitFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 90EFD79C1F1E09D80057ABAC /* WxxKitFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90EFD7AF1F1E09D90057ABAC /* WxxKitFrameWork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90EFD79A1F1E09D80057ABAC /* WxxKitFrameWork.framework */; };
+		90EFD7B01F1E09D90057ABAC /* WxxKitFrameWork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 90EFD79A1F1E09D80057ABAC /* WxxKitFrameWork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		90EFD7BA1F1E0A090057ABAC /* TestView.h in Headers */ = {isa = PBXBuildFile; fileRef = 90EFD7B81F1E0A090057ABAC /* TestView.h */; };
+		90EFD7BB1F1E0A090057ABAC /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90EFD7B91F1E0A090057ABAC /* TestView.m */; };
 		A85C4A391F1CB8EE00186838 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A85C4A381F1CB8EE00186838 /* main.m */; };
 		A85C4A3C1F1CB8EE00186838 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A85C4A3B1F1CB8EE00186838 /* AppDelegate.m */; };
 		A85C4A3F1F1CB8EE00186838 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85C4A3E1F1CB8EE00186838 /* ViewController.m */; };
@@ -18,7 +25,53 @@
 		A85C4A591F1CB96600186838 /* ViewCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A85C4A581F1CB96600186838 /* ViewCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		90EFD7A41F1E09D90057ABAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A85C4A2C1F1CB8EE00186838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90EFD7991F1E09D80057ABAC;
+			remoteInfo = WxxKitFrameWork;
+		};
+		90EFD7A61F1E09D90057ABAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A85C4A2C1F1CB8EE00186838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A85C4A331F1CB8EE00186838;
+			remoteInfo = WxxKit;
+		};
+		90EFD7AD1F1E09D90057ABAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A85C4A2C1F1CB8EE00186838 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 90EFD7991F1E09D80057ABAC;
+			remoteInfo = WxxKitFrameWork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		90EFD7B61F1E09D90057ABAC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				90EFD7B01F1E09D90057ABAC /* WxxKitFrameWork.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		90EFD79A1F1E09D80057ABAC /* WxxKitFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WxxKitFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EFD79C1F1E09D80057ABAC /* WxxKitFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WxxKitFrameWork.h; sourceTree = "<group>"; };
+		90EFD79D1F1E09D80057ABAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90EFD7A21F1E09D90057ABAC /* WxxKitFrameWorkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WxxKitFrameWorkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		90EFD7A91F1E09D90057ABAC /* WxxKitFrameWorkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WxxKitFrameWorkTests.m; sourceTree = "<group>"; };
+		90EFD7AB1F1E09D90057ABAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90EFD7B81F1E0A090057ABAC /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		90EFD7B91F1E0A090057ABAC /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
 		A85C4A341F1CB8EE00186838 /* WxxKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WxxKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85C4A381F1CB8EE00186838 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A85C4A3A1F1CB8EE00186838 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,20 +92,66 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A85C4A311F1CB8EE00186838 /* Frameworks */ = {
+		90EFD7961F1E09D80057ABAC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		90EFD79F1F1E09D90057ABAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90EFD7A31F1E09D90057ABAC /* WxxKitFrameWork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A85C4A311F1CB8EE00186838 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90EFD7AF1F1E09D90057ABAC /* WxxKitFrameWork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		90EFD79B1F1E09D80057ABAC /* WxxKitFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				90EFD7BD1F1E0A320057ABAC /* DeviceModule */,
+				90EFD79C1F1E09D80057ABAC /* WxxKitFrameWork.h */,
+				90EFD79D1F1E09D80057ABAC /* Info.plist */,
+				90EFD7B81F1E0A090057ABAC /* TestView.h */,
+				90EFD7B91F1E0A090057ABAC /* TestView.m */,
+			);
+			path = WxxKitFrameWork;
+			sourceTree = "<group>";
+		};
+		90EFD7A81F1E09D90057ABAC /* WxxKitFrameWorkTests */ = {
+			isa = PBXGroup;
+			children = (
+				90EFD7A91F1E09D90057ABAC /* WxxKitFrameWorkTests.m */,
+				90EFD7AB1F1E09D90057ABAC /* Info.plist */,
+			);
+			path = WxxKitFrameWorkTests;
+			sourceTree = "<group>";
+		};
+		90EFD7BD1F1E0A320057ABAC /* DeviceModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DeviceModule;
+			sourceTree = "<group>";
+		};
 		A85C4A2B1F1CB8ED00186838 = {
 			isa = PBXGroup;
 			children = (
 				A85C4A361F1CB8EE00186838 /* WxxKit */,
+				90EFD79B1F1E09D80057ABAC /* WxxKitFrameWork */,
+				90EFD7A81F1E09D90057ABAC /* WxxKitFrameWorkTests */,
 				A85C4A351F1CB8EE00186838 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				A85C4A341F1CB8EE00186838 /* WxxKit.app */,
+				90EFD79A1F1E09D80057ABAC /* WxxKitFrameWork.framework */,
+				90EFD7A21F1E09D90057ABAC /* WxxKitFrameWorkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -122,7 +223,56 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		90EFD7971F1E09D80057ABAC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90EFD7AC1F1E09D90057ABAC /* WxxKitFrameWork.h in Headers */,
+				90EFD7BA1F1E0A090057ABAC /* TestView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
+		90EFD7991F1E09D80057ABAC /* WxxKitFrameWork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90EFD7B51F1E09D90057ABAC /* Build configuration list for PBXNativeTarget "WxxKitFrameWork" */;
+			buildPhases = (
+				90EFD7951F1E09D80057ABAC /* Sources */,
+				90EFD7961F1E09D80057ABAC /* Frameworks */,
+				90EFD7971F1E09D80057ABAC /* Headers */,
+				90EFD7981F1E09D80057ABAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WxxKitFrameWork;
+			productName = WxxKitFrameWork;
+			productReference = 90EFD79A1F1E09D80057ABAC /* WxxKitFrameWork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		90EFD7A11F1E09D90057ABAC /* WxxKitFrameWorkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 90EFD7B71F1E09D90057ABAC /* Build configuration list for PBXNativeTarget "WxxKitFrameWorkTests" */;
+			buildPhases = (
+				90EFD79E1F1E09D90057ABAC /* Sources */,
+				90EFD79F1F1E09D90057ABAC /* Frameworks */,
+				90EFD7A01F1E09D90057ABAC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				90EFD7A51F1E09D90057ABAC /* PBXTargetDependency */,
+				90EFD7A71F1E09D90057ABAC /* PBXTargetDependency */,
+			);
+			name = WxxKitFrameWorkTests;
+			productName = WxxKitFrameWorkTests;
+			productReference = 90EFD7A21F1E09D90057ABAC /* WxxKitFrameWorkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A85C4A331F1CB8EE00186838 /* WxxKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A85C4A4B1F1CB8EE00186838 /* Build configuration list for PBXNativeTarget "WxxKit" */;
@@ -130,10 +280,12 @@
 				A85C4A301F1CB8EE00186838 /* Sources */,
 				A85C4A311F1CB8EE00186838 /* Frameworks */,
 				A85C4A321F1CB8EE00186838 /* Resources */,
+				90EFD7B61F1E09D90057ABAC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				90EFD7AE1F1E09D90057ABAC /* PBXTargetDependency */,
 			);
 			name = WxxKit;
 			productName = WxxKit;
@@ -149,6 +301,16 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = wengxianxun;
 				TargetAttributes = {
+					90EFD7991F1E09D80057ABAC = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 2V5YGEBZ37;
+						ProvisioningStyle = Automatic;
+					};
+					90EFD7A11F1E09D90057ABAC = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A85C4A331F1CB8EE00186838;
+					};
 					A85C4A331F1CB8EE00186838 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 2V5YGEBZ37;
@@ -170,11 +332,27 @@
 			projectRoot = "";
 			targets = (
 				A85C4A331F1CB8EE00186838 /* WxxKit */,
+				90EFD7991F1E09D80057ABAC /* WxxKitFrameWork */,
+				90EFD7A11F1E09D90057ABAC /* WxxKitFrameWorkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		90EFD7981F1E09D80057ABAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90EFD7A01F1E09D90057ABAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A85C4A321F1CB8EE00186838 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -188,6 +366,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		90EFD7951F1E09D80057ABAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90EFD7BB1F1E0A090057ABAC /* TestView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90EFD79E1F1E09D90057ABAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90EFD7AA1F1E09D90057ABAC /* WxxKitFrameWorkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A85C4A301F1CB8EE00186838 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +396,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		90EFD7A51F1E09D90057ABAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90EFD7991F1E09D80057ABAC /* WxxKitFrameWork */;
+			targetProxy = 90EFD7A41F1E09D90057ABAC /* PBXContainerItemProxy */;
+		};
+		90EFD7A71F1E09D90057ABAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A85C4A331F1CB8EE00186838 /* WxxKit */;
+			targetProxy = 90EFD7A61F1E09D90057ABAC /* PBXContainerItemProxy */;
+		};
+		90EFD7AE1F1E09D90057ABAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 90EFD7991F1E09D80057ABAC /* WxxKitFrameWork */;
+			targetProxy = 90EFD7AD1F1E09D90057ABAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A85C4A401F1CB8EE00186838 /* Main.storyboard */ = {
@@ -223,6 +435,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		90EFD7B11F1E09D90057ABAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2V5YGEBZ37;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WxxKitFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.WxxKitFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		90EFD7B21F1E09D90057ABAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2V5YGEBZ37;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = WxxKitFrameWork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.WxxKitFrameWork;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		90EFD7B31F1E09D90057ABAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WxxKitFrameWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.WxxKitFrameWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WxxKit.app/WxxKit";
+			};
+			name = Debug;
+		};
+		90EFD7B41F1E09D90057ABAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WxxKitFrameWorkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.WxxKitFrameWorkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WxxKit.app/WxxKit";
+			};
+			name = Release;
+		};
 		A85C4A491F1CB8EE00186838 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -342,6 +620,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		90EFD7B51F1E09D90057ABAC /* Build configuration list for PBXNativeTarget "WxxKitFrameWork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90EFD7B11F1E09D90057ABAC /* Debug */,
+				90EFD7B21F1E09D90057ABAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		90EFD7B71F1E09D90057ABAC /* Build configuration list for PBXNativeTarget "WxxKitFrameWorkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				90EFD7B31F1E09D90057ABAC /* Debug */,
+				90EFD7B41F1E09D90057ABAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A85C4A2F1F1CB8EE00186838 /* Build configuration list for PBXProject "WxxKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -358,6 +654,7 @@
 				A85C4A4D1F1CB8EE00186838 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

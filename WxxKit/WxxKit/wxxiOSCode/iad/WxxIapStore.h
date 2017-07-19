@@ -15,8 +15,8 @@
 
 @protocol WxxIapStoreDelegate
 
--(void)WxxIapBuyResult:(BOOL)buyResult;
-
+-(void)wxxIapStoreDelegateIapBuyResult:(BOOL)buyResult;
+-(void)wxxIapStoreDelegateRestoreProducts:(NSArray *)productArr;
 @end
 
 /**
@@ -37,7 +37,7 @@
  * 重购，一次性购买的物品需要提供重购按钮，否则审核不让通过
  */
 -(void)wxxIapRestore;
-
+te
 /**
  * 获取App的包名
  * 一般内购的标示前缀使用对应App的包名加上后缀， 比如 com.xxx.app.6 , 这样比较一致，好控制

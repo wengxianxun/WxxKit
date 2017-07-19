@@ -64,11 +64,11 @@
         self.wiapstore.delegate = self;
         
     }
-    [self.wiapstore wxxBuyStartWithProductIdentifiers:[self.wiapstore wxxGetProductIdByAppbundleIdentifier:@"30"]];//开始购买
+    [self.wiapstore wxxIapRestore];//重购
 }
 
 #pragma mark WxxIapStoreDelegate
--(void)WxxIapBuyResult:(BOOL)buyResult{
+-(void)wxxIapStoreDelegateIapBuyResult:(BOOL)buyResult{
     
     if (buyResult) {
         NSLog(@"成功");
@@ -77,6 +77,18 @@
     }
 }
 
+//重购返回
+-(void)wxxIapStoreDelegateRestoreProducts:(NSArray *)productArr{
+    if (!productArr) {
+        //无重购项目
+        return;
+    }
+    for (int i =0 ; i<[productArr count]; i++) {
+        SKPaymentTransaction *skPay = productArr[i];
+        
+        NSLog(@"恢复购买的productId: %@",skPay.payment.productIdentifier);
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

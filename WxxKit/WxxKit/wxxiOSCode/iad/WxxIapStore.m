@@ -39,7 +39,7 @@
  */
 -(void)wxxIapBuyResult:(BOOL)buyResult{
     if (self.delegate) {
-        [self.delegate WxxIapBuyResult:buyResult];
+        [self.delegate wxxIapStoreDelegateIapBuyResult:buyResult];
     }
 }
 
@@ -206,15 +206,13 @@ NSLog(@"paymentQueue");
     NSArray *array = queue.transactions;
     if ([array count]==0) {
         NSLog(@"没有已购买项目。");
-//        [self sendObject:@"1"];
-//        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:LOCAL("提示") message:LOCAL("没有已购买项目") delegate:Nil cancelButtonTitle:LOCAL("确定") otherButtonTitles:Nil, nil];
-//        [alertView show];
+        if (self.delegate) {
+            [self.delegate wxxIapStoreDelegateRestoreProducts:nil];
+        }
     }else{
-//        for (int i =0 ; i<[array count]; i++) {
-//            SKPaymentTransaction *skPay = array[i];
-//             
-//            [self sendObject:array];
-//        }
+        if (self.delegate) {
+            [self.delegate wxxIapStoreDelegateRestoreProducts:array];
+        }
     }
 }
 - (void)restoreTransaction:(SKPaymentTransaction *)transaction {
