@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
  
 s.name              = "WxxKit"
-s.version           = "1.1.0"
+s.version           = "1.1.1"
 s.summary           = "iOS通用库"
 
 s.homepage          = "https://github.com/wengxianxun/WxxKit"
@@ -21,7 +21,7 @@ s.ios.deployment_target = "7.0"
 s.author              = { "wengxianxun" => "wengxianxun@hotmail.com" }
 
 s.source            = { :git => "https://github.com/wengxianxun/WxxKit.git", :tag => "#{s.version}" }
-s.source_files      = 'WxxKit/WxxKit/WxxKitFrameWork/**/*.{h,m}'
+s.source_files      = 'WxxKit/WxxKitFrameWork/**/*.{h,m}'
 #s.frameworks = 'CoreImage', 'WebKit', 'Security', 'SystemConfiguration', 'UIKit','CFNetwork','MediaPlayer','StoreKit','CoreMotion','AudioToolbox','AdSupport','CoreTelephony'
 #s.library = 'z','sqlite3'
   
