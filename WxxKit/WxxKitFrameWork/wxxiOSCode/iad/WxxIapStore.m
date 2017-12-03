@@ -10,7 +10,8 @@
 
 @interface WxxIapStore()
 @property (nonatomic,strong)NSString* productId;
-
+@property (strong, nonatomic) SKProductsRequest *request;
+@property (strong, nonatomic) SKPaymentQueue *skPaymentQueue;
 -(void)wxxIapBuyResult:(BOOL)buyResult;
 -(void)wxxGetProductInfo;
 
@@ -30,6 +31,7 @@
     if (self) {
         // 监听购买结果
         [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
+        self.skPaymentQueue = [SKPaymentQueue defaultQueue];
     }
     return self;
 }
@@ -65,11 +67,14 @@
  * 获取产品信息
  */
 - (void)wxxGetProductInfo{
-    
+    if (self.request) {
+        self.request.delegate = nil;
+        self.request = nil;
+    }
     NSSet * set = [NSSet setWithArray:@[self.productId]];
-    SKProductsRequest * request = [[SKProductsRequest alloc] initWithProductIdentifiers:set];
-    request.delegate = self;
-    [request start];
+    self.request = [[SKProductsRequest alloc] initWithProductIdentifiers:set];
+    self.request.delegate = self;
+    [self.request start];
 }
 
 
@@ -83,7 +88,7 @@
         return;
     }
     SKPayment * payment = [SKPayment paymentWithProduct:myProduct[0]];
-    [[SKPaymentQueue defaultQueue] addPayment:payment];
+    [self.skPaymentQueue addPayment:payment];
 }
 
 // 步骤4
@@ -142,7 +147,7 @@ NSLog(@"paymentQueue");
     }
     [self wxxIapBuyResult:BUYSECCUSS];
     // Remove the transaction from the payment queue.
-    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
+    [self.skPaymentQueue finishTransaction: transaction];
     
 }
 
