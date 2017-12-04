@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
  
 s.name              = "WxxKit"
-s.version           = "1.1.3"
+s.version           = "2.0.0"
 s.summary           = "iOS通用库"
 
 s.homepage          = "https://github.com/wengxianxun/WxxKit"
