@@ -11,27 +11,29 @@
 @interface WxxIapStore()
 @property (nonatomic,strong)NSString* productId;
 @property (strong, nonatomic) SKProductsRequest *request;
-@property (strong, nonatomic) SKPaymentQueue *skPaymentQueue;
 -(void)wxxIapBuyResult:(BOOL)buyResult;
 -(void)wxxGetProductInfo;
-
 @end
 
 @implementation WxxIapStore
 
 -(void)dealloc{
-    
+    self.request = nil;
     self.delegate = nil;
     self.productId = nil;
+    if ([SKPaymentQueue defaultQueue]) {
+        [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
+    }
 }
 
 - (id)init
 {
     self = [super init];
     if (self) {
+        
+        //        self.skPaymentQueue = [SKPaymentQueue defaultQueue];
         // 监听购买结果
         [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
-        self.skPaymentQueue = [SKPaymentQueue defaultQueue];
     }
     return self;
 }
@@ -88,7 +90,7 @@
         return;
     }
     SKPayment * payment = [SKPayment paymentWithProduct:myProduct[0]];
-    [self.skPaymentQueue addPayment:payment];
+    [[SKPaymentQueue defaultQueue] addPayment:payment];
 }
 
 // 步骤4
@@ -109,7 +111,6 @@
                 break;
             case SKPaymentTransactionStatePurchasing:      //商品添加进列表
                 NSLog(@"交易中");
-
                 break;
             default:
                 break;
@@ -128,27 +129,24 @@
 // 当尝试恢复还原交易信息时，若出错，则会触发此方法，无需做处理。
 - (void)paymentQueue:(SKPaymentQueue *)queue restoreCompletedTransactionsFailedWithError:(NSError *)error __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_3_0){
     NSLog(@"paymentQueue");
-//    [self sendObject:@"1"];
 }
- 
+
 
 // Sent when the download state has changed.
 // 当transaction队列的一个或多个transaction的数据被提交或更新后，会触发此方法，无需处理。
 - (void)paymentQueue:(SKPaymentQueue *)queue updatedDownloads:(NSArray *)downloads __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_6_0){
-NSLog(@"paymentQueue");
+    NSLog(@"paymentQueue");
 }
 
 - (void)completeTransaction:(SKPaymentTransaction *)transaction {
     // Your application should implement these two methods.
     NSString * productIdentifier = transaction.payment.productIdentifier;
-//    NSString * receipt = [transaction.transactionReceipt base64EncodedString];
     if ([productIdentifier length] > 0) {
         // 向自己的服务器验证购买凭证
     }
+    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
     [self wxxIapBuyResult:BUYSECCUSS];
     // Remove the transaction from the payment queue.
-    [self.skPaymentQueue finishTransaction: transaction];
-    
 }
 
 - (void)failedTransaction:(SKPaymentTransaction *)transaction {
@@ -198,13 +196,13 @@ NSLog(@"paymentQueue");
     if(transaction.error.code != SKErrorPaymentCancelled) {
         
         NSLog(@"购买失败%@----%@",transaction.error.domain,transaction.error.description);
-
-         [self wxxIapBuyResult:BUYERROR];
+        
+        [self wxxIapBuyResult:BUYERROR];
     } else {
         NSLog(@"用户取消交易");
-         [self wxxIapBuyResult:BUYERROR];
+        [self wxxIapBuyResult:BUYERROR];
     }
-    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
+    [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 - (void)paymentQueueRestoreCompletedTransactionsFinished:(SKPaymentQueue *)queue
 {
@@ -222,7 +220,7 @@ NSLog(@"paymentQueue");
 }
 - (void)restoreTransaction:(SKPaymentTransaction *)transaction {
     // 对于已购商品，处理恢复购买的逻辑
-    [[SKPaymentQueue defaultQueue] finishTransaction: transaction];
+    [[SKPaymentQueue defaultQueue] finishTransaction:transaction];
 }
 
 
@@ -232,8 +230,7 @@ NSLog(@"paymentQueue");
 -(void)wxxIapRestore{
     // Assign an observer to monitor the transaction status.
     [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
-    
-    // Request to restore previous purchases.
+    // Request to restore previous purchases. 
     [[SKPaymentQueue defaultQueue] restoreCompletedTransactions];
 }
 
@@ -251,3 +248,4 @@ NSLog(@"paymentQueue");
 
 
 @end
+
