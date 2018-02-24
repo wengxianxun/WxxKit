@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090B740F20413BB70012B9DD /* WxxSKStoreReview.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B740D20413BB70012B9DD /* WxxSKStoreReview.h */; };
+		090B741020413BB70012B9DD /* WxxSKStoreReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B740E20413BB70012B9DD /* WxxSKStoreReview.m */; };
+		090B741120413BBB0012B9DD /* WxxSKStoreReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B740E20413BB70012B9DD /* WxxSKStoreReview.m */; };
 		90B3CE891F21D3D400DBAE8B /* WxxIapStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B3CE861F21D3D400DBAE8B /* WxxIapStore.h */; };
 		90B3CE8A1F21D3D400DBAE8B /* WxxIapStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B3CE871F21D3D400DBAE8B /* WxxIapStore.m */; };
 		90B3CE8B1F21D3D400DBAE8B /* WxxKitConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B3CE881F21D3D400DBAE8B /* WxxKitConfig.h */; };
@@ -67,6 +70,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		090B740D20413BB70012B9DD /* WxxSKStoreReview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WxxSKStoreReview.h; sourceTree = "<group>"; };
+		090B740E20413BB70012B9DD /* WxxSKStoreReview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WxxSKStoreReview.m; sourceTree = "<group>"; };
 		90B3CE861F21D3D400DBAE8B /* WxxIapStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxIapStore.h; sourceTree = "<group>"; };
 		90B3CE871F21D3D400DBAE8B /* WxxIapStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxxIapStore.m; sourceTree = "<group>"; };
 		90B3CE881F21D3D400DBAE8B /* WxxKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxKitConfig.h; sourceTree = "<group>"; };
@@ -121,9 +126,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090B740C20413B5C0012B9DD /* skstorereview */ = {
+			isa = PBXGroup;
+			children = (
+				090B740D20413BB70012B9DD /* WxxSKStoreReview.h */,
+				090B740E20413BB70012B9DD /* WxxSKStoreReview.m */,
+			);
+			path = skstorereview;
+			sourceTree = "<group>";
+		};
 		90B3CE841F21D3D400DBAE8B /* wxxiOSCode */ = {
 			isa = PBXGroup;
 			children = (
+				090B740C20413B5C0012B9DD /* skstorereview */,
 				90B3CE8C1F2210C900DBAE8B /* memory */,
 				90B3CE851F21D3D400DBAE8B /* iad */,
 				90B3CE881F21D3D400DBAE8B /* WxxKitConfig.h */,
@@ -232,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				90B3CE8B1F21D3D400DBAE8B /* WxxKitConfig.h in Headers */,
+				090B740F20413BB70012B9DD /* WxxSKStoreReview.h in Headers */,
 				90B3CE8F1F2210E300DBAE8B /* WxxMemoryInfo.h in Headers */,
 				90EFD7AC1F1E09D90057ABAC /* WxxKitFrameWork.h in Headers */,
 				90B3CE891F21D3D400DBAE8B /* WxxIapStore.h in Headers */,
@@ -375,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090B741020413BB70012B9DD /* WxxSKStoreReview.m in Sources */,
 				90B3CE911F2210E300DBAE8B /* WxxMemoryInfo.m in Sources */,
 				90B3CE8A1F21D3D400DBAE8B /* WxxIapStore.m in Sources */,
 			);
@@ -397,6 +414,7 @@
 				A85C4A3C1F1CB8EE00186838 /* AppDelegate.m in Sources */,
 				A85C4A561F1CB92400186838 /* IapViewController.m in Sources */,
 				A85C4A591F1CB96600186838 /* ViewCollectionViewCell.m in Sources */,
+				090B741120413BBB0012B9DD /* WxxSKStoreReview.m in Sources */,
 				A85C4A391F1CB8EE00186838 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

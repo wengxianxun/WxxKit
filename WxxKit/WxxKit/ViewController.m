@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import "ViewCollectionViewCell.h"
 #import "IapViewController.h"
+#import "WxxSKStoreReview.h"
 typedef enum{
     setIap,
+    setStoreReview,
 }setType;
 
 @interface ViewController ()
@@ -42,6 +44,11 @@ typedef enum{
                              @"内购",@"text",
                              @"0",@"type",
                              [NSString stringWithFormat:@"%d",setIap],@"setType",nil]];
+    
+    [self.listArr addObject:[NSDictionary dictionaryWithObjectsAndKeys:
+                             @"评分",@"text",
+                             @"0",@"type",
+                             [NSString stringWithFormat:@"%d",setStoreReview],@"setType",nil]];
     
     
 }
@@ -143,6 +150,9 @@ typedef enum{
     switch (typp) {
         case setIap:
             [self toIapVC];
+            break;
+        case setStoreReview:
+            [WxxSKStoreReview wxxSKStoreReviewAction];
             break;
         default:
             break;
