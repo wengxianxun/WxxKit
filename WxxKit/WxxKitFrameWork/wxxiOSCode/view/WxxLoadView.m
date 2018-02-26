@@ -12,7 +12,6 @@
 
 @property (nonatomic,strong)UIView *backView;
 @property (nonatomic,strong)UIActivityIndicatorView *activityIndicator;
-@property(strong) Reachability * internetConnectionReach;
 @end
 @implementation WxxLoadView
 #pragma mark -
@@ -34,7 +33,6 @@ static WxxLoadView *_shared = nil;
 {
     self = [super initWithFrame:CGRectMake(0, 0, [[UIScreen mainScreen] bounds].size.width , [[UIScreen mainScreen] bounds].size.height)];
     if (self) {
-        self.isLinkNet = NO;
         self.backgroundColor = [UIColor clearColor];
         
         _backView = [[UIView alloc]initWithFrame:CGRectMake((self.frame.size.width-80)/2, (self.frame.size.height-80)/2, 80, 80)];
@@ -74,7 +72,6 @@ static WxxLoadView *_shared = nil;
      
         self.alpha = 0;
         
-        [self checkNet];
 //         [self.spinner startAnimating];
     }
     return self;
@@ -116,98 +113,5 @@ static WxxLoadView *_shared = nil;
 //
 }
 
--(void)checkNet{
-    
-    [[NSNotificationCenter defaultCenter] addObserver:self
-                                             selector:@selector(reachabilityChanged:)
-                                                 name:kReachabilityChangedNotification
-                                               object:nil];
-    
-    self.internetConnectionReach = [Reachability reachabilityForInternetConnection];
-    [self.internetConnectionReach startNotifier];
-    [self updateInterfaceWithReachability:self.internetConnectionReach];
-}
-
-/*!
- * Called by Reachability whenever status changes.
- */
-- (void) reachabilityChanged:(NSNotification *)note
-{
-    Reachability* curReach = [note object];
-    NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
-    [self updateInterfaceWithReachability:curReach];
-}
-
-
-- (void)updateInterfaceWithReachability:(Reachability *)reachability
-{
-    if (reachability == self.internetConnectionReach)
-    {
-        NetworkStatus netStatus = [reachability currentReachabilityStatus];
-        BOOL connectionRequired = [reachability connectionRequired];
-        NSString* statusString = @"";
-        
-        switch (netStatus)
-        {
-            case NotReachable:        {
-                statusString = NSLocalizedString(@"Access Not Available", @"Text field text for access is not available");
-                
-                connectionRequired = NO;
-                self.isLinkNet = NO;
-                break;
-            }
-                
-            case ReachableViaWWAN:        {
-                statusString = NSLocalizedString(@"Reachable WWAN", @"");
-                self.isLinkNet = YES;
-                break;
-            }
-            case ReachableViaWiFi:        {
-                statusString= NSLocalizedString(@"Reachable WiFi", @"");
-                self.isLinkNet = YES;
-                break;
-            }
-        }
-    }
-    
-}
-
-
-- (void)configureTextField:(UITextField *)textField imageView:(UIImageView *)imageView reachability:(Reachability *)reachability
-{
-    NetworkStatus netStatus = [reachability currentReachabilityStatus];
-    BOOL connectionRequired = [reachability connectionRequired];
-    NSString* statusString = @"";
-    
-    switch (netStatus)
-    {
-        case NotReachable:        {
-            statusString = NSLocalizedString(@"Access Not Available", @"Text field text for access is not available");
-            imageView.image = [UIImage imageNamed:@"stop-32.png"] ;
-            /*
-             Minor interface detail- connectionRequired may return YES even when the host is unreachable. We cover that up here...
-             */
-            connectionRequired = NO;
-            break;
-        }
-            
-        case ReachableViaWWAN:        {
-            statusString = NSLocalizedString(@"Reachable WWAN", @"");
-            imageView.image = [UIImage imageNamed:@"WWAN5.png"];
-            break;
-        }
-        case ReachableViaWiFi:        {
-            statusString= NSLocalizedString(@"Reachable WiFi", @"");
-            imageView.image = [UIImage imageNamed:@"Airport.png"];
-            break;
-        }
-    }
-    
-    if (connectionRequired)
-    {
-        NSString *connectionRequiredFormatString = NSLocalizedString(@"%@, Connection Required", @"Concatenation of status string with connection requirement");
-        statusString= [NSString stringWithFormat:connectionRequiredFormatString, statusString];
-    }
-    textField.text= statusString;
-}
+  
 @end

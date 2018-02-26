@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-@interface WxxLoadView : UIView
-@property (nonatomic,assign)BOOL isLinkNet;
+@interface WxxLoadView : UIView 
 + (WxxLoadView *)sharedInstance;
 
 -(void)showself;
