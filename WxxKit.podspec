@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
  
 s.name              = "WxxKit"
-s.version           = "2.1.4"
+s.version           = "2.1.5"
 s.summary           = "iOS通用库"
 
 s.homepage          = "https://github.com/wengxianxun/WxxKit"
@@ -37,7 +37,14 @@ s.subspec 'skstorereview' do |sk|
     sk.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/skstorereview/*.{h,m}' 
 end
 
+s.subspec 'view' do |view|
+    view.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/view/*.{h,m}' 
+end
 
+
+s.subspec 'base' do |base|
+    base.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/base/*.{h,m}' 
+end
 #s.frameworks = 'CoreImage', 'WebKit', 'Security', 'SystemConfiguration', 'UIKit','CFNetwork','MediaPlayer','StoreKit','CoreMotion','AudioToolbox','AdSupport','CoreTelephony'
 #s.library = 'z','sqlite3'
   

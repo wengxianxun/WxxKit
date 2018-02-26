@@ -10,6 +10,30 @@
 		090B740F20413BB70012B9DD /* WxxSKStoreReview.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B740D20413BB70012B9DD /* WxxSKStoreReview.h */; };
 		090B741020413BB70012B9DD /* WxxSKStoreReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B740E20413BB70012B9DD /* WxxSKStoreReview.m */; };
 		090B741120413BBB0012B9DD /* WxxSKStoreReview.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B740E20413BB70012B9DD /* WxxSKStoreReview.m */; };
+		090B748A2044035F0012B9DD /* NSString+wxx.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B7480204403580012B9DD /* NSString+wxx.m */; };
+		090B748B2044035F0012B9DD /* NSString+wxx.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B7480204403580012B9DD /* NSString+wxx.m */; };
+		090B748C2044035F0012B9DD /* WxxFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B7481204403590012B9DD /* WxxFileUtil.m */; };
+		090B748D2044035F0012B9DD /* WxxFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B7481204403590012B9DD /* WxxFileUtil.m */; };
+		090B748E2044035F0012B9DD /* WxxTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74822044035C0012B9DD /* WxxTipView.m */; };
+		090B748F2044035F0012B9DD /* WxxTipView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74822044035C0012B9DD /* WxxTipView.m */; };
+		090B74902044035F0012B9DD /* WxxTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74832044035D0012B9DD /* WxxTime.m */; };
+		090B74912044035F0012B9DD /* WxxTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74832044035D0012B9DD /* WxxTime.m */; };
+		090B74922044035F0012B9DD /* NSString+wxx.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B74842044035D0012B9DD /* NSString+wxx.h */; };
+		090B74932044035F0012B9DD /* WxxLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74852044035D0012B9DD /* WxxLoadView.m */; };
+		090B74942044035F0012B9DD /* WxxLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74852044035D0012B9DD /* WxxLoadView.m */; };
+		090B74952044035F0012B9DD /* WxxFileUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B74862044035E0012B9DD /* WxxFileUtil.h */; };
+		090B74962044035F0012B9DD /* WxxLoadView.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B74872044035E0012B9DD /* WxxLoadView.h */; };
+		090B74972044035F0012B9DD /* WxxTipView.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B74882044035F0012B9DD /* WxxTipView.h */; };
+		090B74982044035F0012B9DD /* WxxTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B74892044035F0012B9DD /* WxxTime.h */; };
+		090B749E20440CBA0012B9DD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B749A20440CBA0012B9DD /* BaseViewController.m */; };
+		090B749F20440CBA0012B9DD /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B749A20440CBA0012B9DD /* BaseViewController.m */; };
+		090B74A020440CBA0012B9DD /* BaseViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B749B20440CBA0012B9DD /* BaseViewModel.h */; };
+		090B74A120440CBA0012B9DD /* BaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B749C20440CBA0012B9DD /* BaseViewController.h */; };
+		090B74A220440CBA0012B9DD /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B749D20440CBA0012B9DD /* BaseViewModel.m */; };
+		090B74A320440CBA0012B9DD /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B749D20440CBA0012B9DD /* BaseViewModel.m */; };
+		090B74A6204411B80012B9DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74A4204411B70012B9DD /* Reachability.m */; };
+		090B74A7204411B80012B9DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74A4204411B70012B9DD /* Reachability.m */; };
+		090B74A8204411B80012B9DD /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B74A5204411B70012B9DD /* Reachability.h */; };
 		90B3CE891F21D3D400DBAE8B /* WxxIapStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B3CE861F21D3D400DBAE8B /* WxxIapStore.h */; };
 		90B3CE8A1F21D3D400DBAE8B /* WxxIapStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B3CE871F21D3D400DBAE8B /* WxxIapStore.m */; };
 		90B3CE8B1F21D3D400DBAE8B /* WxxKitConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B3CE881F21D3D400DBAE8B /* WxxKitConfig.h */; };
@@ -72,6 +96,22 @@
 /* Begin PBXFileReference section */
 		090B740D20413BB70012B9DD /* WxxSKStoreReview.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WxxSKStoreReview.h; sourceTree = "<group>"; };
 		090B740E20413BB70012B9DD /* WxxSKStoreReview.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WxxSKStoreReview.m; sourceTree = "<group>"; };
+		090B7480204403580012B9DD /* NSString+wxx.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+wxx.m"; sourceTree = "<group>"; };
+		090B7481204403590012B9DD /* WxxFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxxFileUtil.m; sourceTree = "<group>"; };
+		090B74822044035C0012B9DD /* WxxTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxxTipView.m; sourceTree = "<group>"; };
+		090B74832044035D0012B9DD /* WxxTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxxTime.m; sourceTree = "<group>"; };
+		090B74842044035D0012B9DD /* NSString+wxx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+wxx.h"; sourceTree = "<group>"; };
+		090B74852044035D0012B9DD /* WxxLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxxLoadView.m; sourceTree = "<group>"; };
+		090B74862044035E0012B9DD /* WxxFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxFileUtil.h; sourceTree = "<group>"; };
+		090B74872044035E0012B9DD /* WxxLoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxLoadView.h; sourceTree = "<group>"; };
+		090B74882044035F0012B9DD /* WxxTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxTipView.h; sourceTree = "<group>"; };
+		090B74892044035F0012B9DD /* WxxTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxTime.h; sourceTree = "<group>"; };
+		090B749A20440CBA0012B9DD /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		090B749B20440CBA0012B9DD /* BaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewModel.h; sourceTree = "<group>"; };
+		090B749C20440CBA0012B9DD /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		090B749D20440CBA0012B9DD /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
+		090B74A4204411B70012B9DD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		090B74A5204411B70012B9DD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		90B3CE861F21D3D400DBAE8B /* WxxIapStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxIapStore.h; sourceTree = "<group>"; };
 		90B3CE871F21D3D400DBAE8B /* WxxIapStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxxIapStore.m; sourceTree = "<group>"; };
 		90B3CE881F21D3D400DBAE8B /* WxxKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxKitConfig.h; sourceTree = "<group>"; };
@@ -135,9 +175,41 @@
 			path = skstorereview;
 			sourceTree = "<group>";
 		};
+		090B747F204402D80012B9DD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				090B74842044035D0012B9DD /* NSString+wxx.h */,
+				090B7480204403580012B9DD /* NSString+wxx.m */,
+				090B74862044035E0012B9DD /* WxxFileUtil.h */,
+				090B7481204403590012B9DD /* WxxFileUtil.m */,
+				090B74872044035E0012B9DD /* WxxLoadView.h */,
+				090B74852044035D0012B9DD /* WxxLoadView.m */,
+				090B74892044035F0012B9DD /* WxxTime.h */,
+				090B74832044035D0012B9DD /* WxxTime.m */,
+				090B74882044035F0012B9DD /* WxxTipView.h */,
+				090B74822044035C0012B9DD /* WxxTipView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		090B749920440CAA0012B9DD /* base */ = {
+			isa = PBXGroup;
+			children = (
+				090B749C20440CBA0012B9DD /* BaseViewController.h */,
+				090B74A5204411B70012B9DD /* Reachability.h */,
+				090B74A4204411B70012B9DD /* Reachability.m */,
+				090B749A20440CBA0012B9DD /* BaseViewController.m */,
+				090B749B20440CBA0012B9DD /* BaseViewModel.h */,
+				090B749D20440CBA0012B9DD /* BaseViewModel.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 		90B3CE841F21D3D400DBAE8B /* wxxiOSCode */ = {
 			isa = PBXGroup;
 			children = (
+				090B749920440CAA0012B9DD /* base */,
+				090B747F204402D80012B9DD /* view */,
 				090B740C20413B5C0012B9DD /* skstorereview */,
 				90B3CE8C1F2210C900DBAE8B /* memory */,
 				90B3CE851F21D3D400DBAE8B /* iad */,
@@ -246,9 +318,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090B74A120440CBA0012B9DD /* BaseViewController.h in Headers */,
+				090B74A8204411B80012B9DD /* Reachability.h in Headers */,
 				90B3CE8B1F21D3D400DBAE8B /* WxxKitConfig.h in Headers */,
+				090B74972044035F0012B9DD /* WxxTipView.h in Headers */,
+				090B74A020440CBA0012B9DD /* BaseViewModel.h in Headers */,
 				090B740F20413BB70012B9DD /* WxxSKStoreReview.h in Headers */,
+				090B74922044035F0012B9DD /* NSString+wxx.h in Headers */,
+				090B74952044035F0012B9DD /* WxxFileUtil.h in Headers */,
 				90B3CE8F1F2210E300DBAE8B /* WxxMemoryInfo.h in Headers */,
+				090B74962044035F0012B9DD /* WxxLoadView.h in Headers */,
+				090B74982044035F0012B9DD /* WxxTime.h in Headers */,
 				90EFD7AC1F1E09D90057ABAC /* WxxKitFrameWork.h in Headers */,
 				90B3CE891F21D3D400DBAE8B /* WxxIapStore.h in Headers */,
 			);
@@ -392,8 +472,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				090B741020413BB70012B9DD /* WxxSKStoreReview.m in Sources */,
+				090B749F20440CBA0012B9DD /* BaseViewController.m in Sources */,
+				090B74912044035F0012B9DD /* WxxTime.m in Sources */,
+				090B74A7204411B80012B9DD /* Reachability.m in Sources */,
+				090B74942044035F0012B9DD /* WxxLoadView.m in Sources */,
 				90B3CE911F2210E300DBAE8B /* WxxMemoryInfo.m in Sources */,
+				090B748F2044035F0012B9DD /* WxxTipView.m in Sources */,
 				90B3CE8A1F21D3D400DBAE8B /* WxxIapStore.m in Sources */,
+				090B748B2044035F0012B9DD /* NSString+wxx.m in Sources */,
+				090B748D2044035F0012B9DD /* WxxFileUtil.m in Sources */,
+				090B74A320440CBA0012B9DD /* BaseViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,12 +497,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				090B748E2044035F0012B9DD /* WxxTipView.m in Sources */,
+				090B74A220440CBA0012B9DD /* BaseViewModel.m in Sources */,
 				90B3CE901F2210E300DBAE8B /* WxxMemoryInfo.m in Sources */,
+				090B74932044035F0012B9DD /* WxxLoadView.m in Sources */,
+				090B74A6204411B80012B9DD /* Reachability.m in Sources */,
 				A85C4A3F1F1CB8EE00186838 /* ViewController.m in Sources */,
 				A85C4A3C1F1CB8EE00186838 /* AppDelegate.m in Sources */,
+				090B748A2044035F0012B9DD /* NSString+wxx.m in Sources */,
+				090B748C2044035F0012B9DD /* WxxFileUtil.m in Sources */,
 				A85C4A561F1CB92400186838 /* IapViewController.m in Sources */,
 				A85C4A591F1CB96600186838 /* ViewCollectionViewCell.m in Sources */,
+				090B749E20440CBA0012B9DD /* BaseViewController.m in Sources */,
 				090B741120413BBB0012B9DD /* WxxSKStoreReview.m in Sources */,
+				090B74902044035F0012B9DD /* WxxTime.m in Sources */,
 				A85C4A391F1CB8EE00186838 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
