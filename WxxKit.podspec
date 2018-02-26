@@ -21,10 +21,12 @@ s.ios.deployment_target = "7.0"
 s.author              = { "wengxianxun" => "wengxianxun@hotmail.com" }
 
 s.source            = { :git => "https://github.com/wengxianxun/WxxKit.git", :tag => "#{s.version}" }
-s.source_files      = 'WxxKit/WxxKitFrameWork/wxxiOSCode/WxxKitConfig.h'
+# s.source_files      = 'WxxKit/WxxKitFrameWork/wxxiOSCode/WxxKitConfig.h'
 
-s.subspec 'iad' do |iad|
-    iad.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/iad/*.{h,m}' 
+  s.default_subspec = 'iad'
+
+s.subspec 'iad' do |iadd|
+    iadd.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/iad/*.{h,m}' 
 end
 
 s.subspec 'memory' do |mr|

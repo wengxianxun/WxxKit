@@ -141,7 +141,6 @@
 				090B740C20413B5C0012B9DD /* skstorereview */,
 				90B3CE8C1F2210C900DBAE8B /* memory */,
 				90B3CE851F21D3D400DBAE8B /* iad */,
-				90B3CE881F21D3D400DBAE8B /* WxxKitConfig.h */,
 			);
 			path = wxxiOSCode;
 			sourceTree = "<group>";
@@ -149,6 +148,7 @@
 		90B3CE851F21D3D400DBAE8B /* iad */ = {
 			isa = PBXGroup;
 			children = (
+				90B3CE881F21D3D400DBAE8B /* WxxKitConfig.h */,
 				90B3CE861F21D3D400DBAE8B /* WxxIapStore.h */,
 				90B3CE871F21D3D400DBAE8B /* WxxIapStore.m */,
 			);
