@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
  
 s.name              = "WxxKit"
-s.version           = "2.1.1"
+s.version           = "2.1.2"
 s.summary           = "iOS通用库"
 
 s.homepage          = "https://github.com/wengxianxun/WxxKit"
@@ -21,18 +21,18 @@ s.ios.deployment_target = "7.0"
 s.author              = { "wengxianxun" => "wengxianxun@hotmail.com" }
 
 s.source            = { :git => "https://github.com/wengxianxun/WxxKit.git", :tag => "#{s.version}" }
-# s.source_files      = 'WxxKit/WxxKitFrameWork/**/*.{h,m}'
+s.source_files      = 'WxxKit/WxxKitFrameWork/wxxiOSCode/WxxKitConfig.h'
 
-s.subspec 'iad' do |core|
-    core.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/iad/*.{h,m}' 
+s.subspec 'iad' do |iad|
+    iad.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/iad/*.{h,m}' 
 end
 
-s.subspec 'memory' do |core|
-    core.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/memory/*.{h,m}' 
+s.subspec 'memory' do |mr|
+    mr.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/memory/*.{h,m}' 
 end
 
-s.subspec 'skstorereview' do |core|
-    core.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/skstorereview/*.{h,m}' 
+s.subspec 'skstorereview' do |sk|
+    sk.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/skstorereview/*.{h,m}' 
 end
 
 
