@@ -7,7 +7,7 @@
 //
 
 #import "BaseViewController.h"
-#import "AppDelegate.h"
+#import "BaseNetControll.h"
 //@implementation UINavigationBar (CustomHeight)
 //- (CGSize)sizeThatFits:(CGSize)size {
 //    // Change navigation bar height. The height must be even, otherwise there will be a white line above the navigation bar.
@@ -120,8 +120,7 @@
 }
 
 -(BOOL)isNetLink{
-    AppDelegate *appDlg = (AppDelegate *)[[UIApplication sharedApplication] delegate];
-    if([appDlg isReachable]){
+    if([BaseNetControll sharedInstance].isReachable){
         return YES;
     }else{
         [self initRealoadBtn];

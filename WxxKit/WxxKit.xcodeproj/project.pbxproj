@@ -34,6 +34,9 @@
 		090B74A6204411B80012B9DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74A4204411B70012B9DD /* Reachability.m */; };
 		090B74A7204411B80012B9DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74A4204411B70012B9DD /* Reachability.m */; };
 		090B74A8204411B80012B9DD /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B74A5204411B70012B9DD /* Reachability.h */; };
+		094E15922045347F0024CBA7 /* BaseNetControll.h in Headers */ = {isa = PBXBuildFile; fileRef = 094E15902045347E0024CBA7 /* BaseNetControll.h */; };
+		094E15932045347F0024CBA7 /* BaseNetControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E15912045347E0024CBA7 /* BaseNetControll.m */; };
+		094E15942045347F0024CBA7 /* BaseNetControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E15912045347E0024CBA7 /* BaseNetControll.m */; };
 		90B3CE891F21D3D400DBAE8B /* WxxIapStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B3CE861F21D3D400DBAE8B /* WxxIapStore.h */; };
 		90B3CE8A1F21D3D400DBAE8B /* WxxIapStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B3CE871F21D3D400DBAE8B /* WxxIapStore.m */; };
 		90B3CE8B1F21D3D400DBAE8B /* WxxKitConfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 90B3CE881F21D3D400DBAE8B /* WxxKitConfig.h */; };
@@ -112,6 +115,8 @@
 		090B749D20440CBA0012B9DD /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		090B74A4204411B70012B9DD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		090B74A5204411B70012B9DD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		094E15902045347E0024CBA7 /* BaseNetControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetControll.h; sourceTree = "<group>"; };
+		094E15912045347E0024CBA7 /* BaseNetControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetControll.m; sourceTree = "<group>"; };
 		90B3CE861F21D3D400DBAE8B /* WxxIapStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxIapStore.h; sourceTree = "<group>"; };
 		90B3CE871F21D3D400DBAE8B /* WxxIapStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WxxIapStore.m; sourceTree = "<group>"; };
 		90B3CE881F21D3D400DBAE8B /* WxxKitConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WxxKitConfig.h; sourceTree = "<group>"; };
@@ -195,10 +200,12 @@
 		090B749920440CAA0012B9DD /* base */ = {
 			isa = PBXGroup;
 			children = (
+				094E15902045347E0024CBA7 /* BaseNetControll.h */,
+				094E15912045347E0024CBA7 /* BaseNetControll.m */,
 				090B749C20440CBA0012B9DD /* BaseViewController.h */,
+				090B749A20440CBA0012B9DD /* BaseViewController.m */,
 				090B74A5204411B70012B9DD /* Reachability.h */,
 				090B74A4204411B70012B9DD /* Reachability.m */,
-				090B749A20440CBA0012B9DD /* BaseViewController.m */,
 				090B749B20440CBA0012B9DD /* BaseViewModel.h */,
 				090B749D20440CBA0012B9DD /* BaseViewModel.m */,
 			);
@@ -326,6 +333,7 @@
 				090B740F20413BB70012B9DD /* WxxSKStoreReview.h in Headers */,
 				090B74922044035F0012B9DD /* NSString+wxx.h in Headers */,
 				090B74952044035F0012B9DD /* WxxFileUtil.h in Headers */,
+				094E15922045347F0024CBA7 /* BaseNetControll.h in Headers */,
 				90B3CE8F1F2210E300DBAE8B /* WxxMemoryInfo.h in Headers */,
 				090B74962044035F0012B9DD /* WxxLoadView.h in Headers */,
 				090B74982044035F0012B9DD /* WxxTime.h in Headers */,
@@ -482,6 +490,7 @@
 				090B748B2044035F0012B9DD /* NSString+wxx.m in Sources */,
 				090B748D2044035F0012B9DD /* WxxFileUtil.m in Sources */,
 				090B74A320440CBA0012B9DD /* BaseViewModel.m in Sources */,
+				094E15942045347F0024CBA7 /* BaseNetControll.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +517,7 @@
 				090B748C2044035F0012B9DD /* WxxFileUtil.m in Sources */,
 				A85C4A561F1CB92400186838 /* IapViewController.m in Sources */,
 				A85C4A591F1CB96600186838 /* ViewCollectionViewCell.m in Sources */,
+				094E15932045347F0024CBA7 /* BaseNetControll.m in Sources */,
 				090B749E20440CBA0012B9DD /* BaseViewController.m in Sources */,
 				090B741120413BBB0012B9DD /* WxxSKStoreReview.m in Sources */,
 				090B74902044035F0012B9DD /* WxxTime.m in Sources */,
