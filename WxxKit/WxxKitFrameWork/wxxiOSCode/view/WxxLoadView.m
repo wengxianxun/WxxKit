@@ -6,8 +6,7 @@
 //  Copyright (c) 2014年 ZWY. All rights reserved.
 //
 
-#import "WxxLoadView.h"
-#import "Reachability.h"
+#import "WxxLoadView.h" 
 @interface WxxLoadView ()
 
 @property (nonatomic,strong)UIView *backView;
