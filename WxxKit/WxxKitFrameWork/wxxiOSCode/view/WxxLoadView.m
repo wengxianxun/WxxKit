@@ -113,5 +113,5 @@ static WxxLoadView *_shared = nil;
 //
 }
 
-  
+
 @end
