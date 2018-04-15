@@ -34,6 +34,12 @@
 		090B74A6204411B80012B9DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74A4204411B70012B9DD /* Reachability.m */; };
 		090B74A7204411B80012B9DD /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 090B74A4204411B70012B9DD /* Reachability.m */; };
 		090B74A8204411B80012B9DD /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 090B74A5204411B70012B9DD /* Reachability.h */; };
+		0919E1B820838BEF00C1009A /* SVHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919E1B420838BEF00C1009A /* SVHTTPClient.m */; };
+		0919E1B920838BEF00C1009A /* SVHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919E1B420838BEF00C1009A /* SVHTTPClient.m */; };
+		0919E1BA20838BEF00C1009A /* SVHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919E1B520838BEF00C1009A /* SVHTTPRequest.m */; };
+		0919E1BB20838BEF00C1009A /* SVHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0919E1B520838BEF00C1009A /* SVHTTPRequest.m */; };
+		0919E1BC20838BEF00C1009A /* SVHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 0919E1B620838BEF00C1009A /* SVHTTPRequest.h */; };
+		0919E1BD20838BEF00C1009A /* SVHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 0919E1B720838BEF00C1009A /* SVHTTPClient.h */; };
 		094E15922045347F0024CBA7 /* BaseNetControll.h in Headers */ = {isa = PBXBuildFile; fileRef = 094E15902045347E0024CBA7 /* BaseNetControll.h */; };
 		094E15932045347F0024CBA7 /* BaseNetControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E15912045347E0024CBA7 /* BaseNetControll.m */; };
 		094E15942045347F0024CBA7 /* BaseNetControll.m in Sources */ = {isa = PBXBuildFile; fileRef = 094E15912045347E0024CBA7 /* BaseNetControll.m */; };
@@ -121,6 +127,10 @@
 		090B749D20440CBA0012B9DD /* BaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewModel.m; sourceTree = "<group>"; };
 		090B74A4204411B70012B9DD /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		090B74A5204411B70012B9DD /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0919E1B420838BEF00C1009A /* SVHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVHTTPClient.m; sourceTree = "<group>"; };
+		0919E1B520838BEF00C1009A /* SVHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVHTTPRequest.m; sourceTree = "<group>"; };
+		0919E1B620838BEF00C1009A /* SVHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVHTTPRequest.h; sourceTree = "<group>"; };
+		0919E1B720838BEF00C1009A /* SVHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVHTTPClient.h; sourceTree = "<group>"; };
 		094E15902045347E0024CBA7 /* BaseNetControll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetControll.h; sourceTree = "<group>"; };
 		094E15912045347E0024CBA7 /* BaseNetControll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetControll.m; sourceTree = "<group>"; };
 		094E159F204540A10024CBA7 /* BaseCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseCollectionViewController.h; sourceTree = "<group>"; };
@@ -223,6 +233,17 @@
 			path = base;
 			sourceTree = "<group>";
 		};
+		0919E1B320838BEF00C1009A /* SVHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				0919E1B420838BEF00C1009A /* SVHTTPClient.m */,
+				0919E1B520838BEF00C1009A /* SVHTTPRequest.m */,
+				0919E1B620838BEF00C1009A /* SVHTTPRequest.h */,
+				0919E1B720838BEF00C1009A /* SVHTTPClient.h */,
+			);
+			path = SVHTTPRequest;
+			sourceTree = "<group>";
+		};
 		094E15A42045411C0024CBA7 /* CollectionVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +258,7 @@
 		90B3CE841F21D3D400DBAE8B /* wxxiOSCode */ = {
 			isa = PBXGroup;
 			children = (
+				0919E1B320838BEF00C1009A /* SVHTTPRequest */,
 				090B749920440CAA0012B9DD /* base */,
 				090B747F204402D80012B9DD /* view */,
 				090B740C20413B5C0012B9DD /* skstorereview */,
@@ -353,6 +375,7 @@
 				90B3CE8B1F21D3D400DBAE8B /* WxxKitConfig.h in Headers */,
 				094E15A1204540A10024CBA7 /* BaseCollectionViewController.h in Headers */,
 				090B74972044035F0012B9DD /* WxxTipView.h in Headers */,
+				0919E1BC20838BEF00C1009A /* SVHTTPRequest.h in Headers */,
 				090B74A020440CBA0012B9DD /* BaseViewModel.h in Headers */,
 				090B740F20413BB70012B9DD /* WxxSKStoreReview.h in Headers */,
 				090B74922044035F0012B9DD /* NSString+wxx.h in Headers */,
@@ -360,6 +383,7 @@
 				094E15922045347F0024CBA7 /* BaseNetControll.h in Headers */,
 				90B3CE8F1F2210E300DBAE8B /* WxxMemoryInfo.h in Headers */,
 				090B74962044035F0012B9DD /* WxxLoadView.h in Headers */,
+				0919E1BD20838BEF00C1009A /* SVHTTPClient.h in Headers */,
 				090B74982044035F0012B9DD /* WxxTime.h in Headers */,
 				90EFD7AC1F1E09D90057ABAC /* WxxKitFrameWork.h in Headers */,
 				90B3CE891F21D3D400DBAE8B /* WxxIapStore.h in Headers */,
@@ -506,6 +530,7 @@
 				090B741020413BB70012B9DD /* WxxSKStoreReview.m in Sources */,
 				090B749F20440CBA0012B9DD /* BaseViewController.m in Sources */,
 				090B74912044035F0012B9DD /* WxxTime.m in Sources */,
+				0919E1B920838BEF00C1009A /* SVHTTPClient.m in Sources */,
 				090B74A7204411B80012B9DD /* Reachability.m in Sources */,
 				090B74942044035F0012B9DD /* WxxLoadView.m in Sources */,
 				90B3CE911F2210E300DBAE8B /* WxxMemoryInfo.m in Sources */,
@@ -514,6 +539,7 @@
 				90B3CE8A1F21D3D400DBAE8B /* WxxIapStore.m in Sources */,
 				094E15A92045423F0024CBA7 /* BaseCollectionViewCell.m in Sources */,
 				090B748B2044035F0012B9DD /* NSString+wxx.m in Sources */,
+				0919E1BB20838BEF00C1009A /* SVHTTPRequest.m in Sources */,
 				090B748D2044035F0012B9DD /* WxxFileUtil.m in Sources */,
 				090B74A320440CBA0012B9DD /* BaseViewModel.m in Sources */,
 				094E15942045347F0024CBA7 /* BaseNetControll.m in Sources */,
@@ -532,6 +558,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0919E1BA20838BEF00C1009A /* SVHTTPRequest.m in Sources */,
 				090B748E2044035F0012B9DD /* WxxTipView.m in Sources */,
 				094E15A82045423F0024CBA7 /* BaseCollectionViewCell.m in Sources */,
 				090B74A220440CBA0012B9DD /* BaseViewModel.m in Sources */,
@@ -549,6 +576,7 @@
 				090B749E20440CBA0012B9DD /* BaseViewController.m in Sources */,
 				090B741120413BBB0012B9DD /* WxxSKStoreReview.m in Sources */,
 				090B74902044035F0012B9DD /* WxxTime.m in Sources */,
+				0919E1B820838BEF00C1009A /* SVHTTPClient.m in Sources */,
 				A85C4A391F1CB8EE00186838 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
