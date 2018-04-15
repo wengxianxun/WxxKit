@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
  
 s.name              = "WxxKit"
-s.version           = "3.0.2"
+s.version           = "3.0.3"
 s.summary           = "iOS通用库"
 
 s.homepage          = "https://github.com/wengxianxun/WxxKit"
@@ -46,8 +46,8 @@ s.subspec 'base' do |base|
     base.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/base/**/*.{h,m}' 
 end
 
-s.subspec 'SVHTTPRequest' do |SVHTTPRequest|
-    base.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/SVHTTPRequest/**/*.{h,m}' 
+s.subspec 'wxxRequest' do |wxxRequest|
+    base.source_files = 'WxxKit/WxxKitFrameWork/wxxiOSCode/SVHTTPRequest/*.{h,m}' 
 end
 #s.frameworks = 'CoreImage', 'WebKit', 'Security', 'SystemConfiguration', 'UIKit','CFNetwork','MediaPlayer','StoreKit','CoreMotion','AudioToolbox','AdSupport','CoreTelephony'
 #s.library = 'z','sqlite3'
